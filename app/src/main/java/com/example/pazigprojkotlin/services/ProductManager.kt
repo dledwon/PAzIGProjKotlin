@@ -14,7 +14,7 @@ class ProductManagerImpl() : ProductManager {
     )
 
     override fun getProducts(): MutableList<Product> {
-        return _products
+        return _products.toMutableList()
     }
 
     override fun addProduct(product: Product) {
