@@ -2,26 +2,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="android.view.View" />
-
-        <variable
-            name="product"
-            type="com.example.pazigprojkotlin.model.Product" />
     </data>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/txtName"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:textSize="20dp"
-            android:layout_marginRight="50dp"
-            android:text="@{product.name}" />
+            android:layout_marginRight="50dp" />
         <TextView
+            android:id="@+id/txtPrice"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:textSize="20dp"
-            android:text="@{Double.toString(product.price)}" />
+            android:textSize="20dp" />
     </LinearLayout>
 
 
